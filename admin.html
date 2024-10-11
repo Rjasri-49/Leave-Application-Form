@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        h2{
+            text-align: center;
+            color: #333;
+        }
+        .details{
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        p{
+            font-size: 18px;
+            color: #444;
+        }
+        .highlight{
+            color: #007bff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>Leave Application Details</h2>
+    <div class="details">
+        <p><strong>Date:</strong>
+            <span class="highlight"><?php echo $_POST['date'];?>
+            </span>
+        </p>
+        <p><strong>Applicant Name:</strong>
+           <span class="highlight"><?php echo $_POST['applicant-name'];?>
+            </span>
+         </p>
+         <p><strong>Authority:</strong>
+            <span class="highlight"><?php echo $_POST['authority'];?>
+            </span>
+        </p>
+        <p><strong>Leave Applying for:</strong>
+            <span class="highlight"><?php echo $_POST['reason'];?>
+            </span>
+        </p>
+        <p><strong>Leave Start Date:</strong>
+            <span class="highlight"><?php echo $_POST['start-date'];?>
+            </span>
+        </p><p><strong>Leave End Date:</strong>
+            <span class="highlight"><?php echo $_POST['end-date'];?>
+            </span>
+        </p>
+
+    </div>
+</body>
+</html>

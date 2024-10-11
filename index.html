@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Leave Application Form</h2>
+    <form action="admin.html" method="POST">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required readonly value="<?php echo date('Y-m-d'): ?>"  style="background-color: #f9f9f9;">
+        <label for="applicant-name">Applicant-Name:</label>
+        <input type="text" id="applicant-name"  name="applicant-name" placeholder="Enter your name" required>
+        <label for="authority">Authority:</label>
+        <select id="authority" name="authority" required>
+            <option value="Principal">Principal</option>
+            <option value="hod">HOD</option>
+        </select>
+        <label for="reason">Leave Applying for:</label>
+        <input type="text" id="reason" name="reason" placeholder="Enter reason for leave" required>
+        <label for="start-date">Leave Start Date:</label>
+        <input type="date" id="start-date" name="start-date" required>
+        <label for="end-date">Leave End Date:</label>
+        <button type="submit" class="apply-btn" style="width: 100%;">Apply</button>
+    </form>
+    
+</body>
+</html>
